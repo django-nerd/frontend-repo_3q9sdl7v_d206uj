@@ -10,9 +10,9 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <section id="get-started" className="py-12">
+        <section id="get-started" className="py-16">
           <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-            <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <div className="rounded-2xl border border-gray-100 bg-white/80 backdrop-blur p-6 shadow-sm">
               <h2 className="text-2xl font-semibold">Why it works</h2>
               <p className="mt-2 text-slate-600 leading-relaxed">
                 Built for focus and consistency. Short sessions, clear goals, and gentle gamification help you stay motivated without stress.
