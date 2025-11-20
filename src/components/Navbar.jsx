@@ -20,7 +20,7 @@ export default function Navbar() {
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-sky-200 to-emerald-200 border border-white shadow-inner flex items-center justify-center">
             <span className="text-sky-700 font-bold">EN</span>
           </div>
-          <span className="font-semibold text-slate-800">LingoFlow</span>
+          <span className="font-semibold text-slate-800">iLearn</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">

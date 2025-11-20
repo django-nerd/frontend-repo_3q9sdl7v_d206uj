@@ -10,7 +10,7 @@ import BadgeCloud from './components/BadgeCloud'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-[#F8F8FF] text-[#2F2E41]">
       <Navbar />
       <main>
         {/* 1. Hero Section */}
@@ -27,11 +27,11 @@ function App() {
               <div className="mt-4">
                 <BadgeCloud />
               </div>
-              <button className="mt-6 inline-flex items-center justify-center rounded-full bg-sky-500 text-white px-6 py-3 text-sm font-semibold shadow-sm hover:bg-sky-600 transition-colors">
+              <button className="mt-6 inline-flex items-center justify-center rounded-full bg-[#6C63FF] text-white px-6 py-3 text-sm font-semibold shadow-sm hover:bg-[#5a52e6] transition-colors">
                 Start Learning
               </button>
             </div>
-            <div className="rounded-2xl border border-gray-100 bg-gradient-to-br from-sky-50 via-emerald-50 to-slate-50 p-6">
+            <div className="rounded-2xl border border-gray-100 bg-gradient-to-br from-[#F1F0FF] via-white to-[#E6FEFF] p-6">
               <Features />
             </div>
           </div>

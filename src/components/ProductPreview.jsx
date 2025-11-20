@@ -14,21 +14,21 @@ export default function ProductPreview() {
   }, [])
 
   return (
-    <section ref={ref} className="py-20 bg-white">
+    <section ref={ref} className="py-20 bg-[#F8F8FF]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="relative overflow-hidden rounded-[32px] border border-gray-100 bg-white/60 backdrop-blur-xl shadow-xl">
           {/* subtle gradient backdrop */}
           <div className="absolute -inset-16 opacity-70" aria-hidden>
-            <div className="h-full w-full bg-[radial-gradient(40%_60%_at_20%_30%,rgba(56,189,248,0.15),transparent),radial-gradient(30%_50%_at_80%_60%,rgba(16,185,129,0.12),transparent)]" />
+            <div className="h-full w-full bg-[radial-gradient(40%_60%_at_20%_30%,rgba(108,99,255,0.12),transparent),radial-gradient(30%_50%_at_80%_60%,rgba(0,212,255,0.12),transparent)]" />
           </div>
           <div className="relative grid lg:grid-cols-2 items-center">
             <div className="p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">See your progress at a glance</h2>
-              <p className="mt-3 text-slate-600 max-w-prose">A clean dashboard highlights what matters: daily tasks, streak, and a clear next step. Everything else stays out of your way.</p>
-              <ul className="mt-6 space-y-3 text-slate-700">
-                <li className="flex items-center gap-2"><span className="inline-block h-2 w-2 rounded-full bg-emerald-500" /> Glassy card layout for focus</li>
-                <li className="flex items-center gap-2"><span className="inline-block h-2 w-2 rounded-full bg-sky-500" /> Gentle micro-animations</li>
-                <li className="flex items-center gap-2"><span className="inline-block h-2 w-2 rounded-full bg-indigo-500" /> Built for low-power devices</li>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#2F2E41]">See your progress at a glance</h2>
+              <p className="mt-3 text-[#2F2E41]/80 max-w-prose">A clean dashboard highlights what matters: daily tasks, streak, and a clear next step. Everything else stays out of your way.</p>
+              <ul className="mt-6 space-y-3 text-[#2F2E41]/80">
+                <li className="flex items-center gap-2"><span className="inline-block h-2 w-2 rounded-full bg-[#6C63FF]" /> Glassy card layout for focus</li>
+                <li className="flex items-center gap-2"><span className="inline-block h-2 w-2 rounded-full bg-[#00D4FF]" /> Gentle micro-animations</li>
+                <li className="flex items-center gap-2"><span className="inline-block h-2 w-2 rounded-full bg-[#2F2E41]" /> Built for low-power devices</li>
               </ul>
             </div>
             {/* iPhone mockup */}
@@ -50,7 +50,7 @@ export default function ProductPreview() {
                         </div>
                       ))}
                     </div>
-                    <div className="mt-4 h-10 rounded-xl bg-gradient-to-r from-emerald-400 to-sky-400" />
+                    <div className="mt-4 h-10 rounded-xl bg-gradient-to-r from-[#6C63FF] to-[#00D4FF]" />
                   </div>
                 </div>
                 {/* glass frame highlight */}
