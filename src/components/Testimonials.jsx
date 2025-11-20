@@ -2,16 +2,20 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const testimonials = [
   {
-    quote: 'I finally enjoy practicing every day. The gentle pace and clean visuals keep me focused.',
-    author: 'Maya, UX Designer'
+    quote: "LingoFlow cut our onboarding time in half. New hires ship customer-ready messages after a week, not a month.",
+    author: 'Sofia — Support Lead'
   },
   {
-    quote: 'The streak and bite-sized tasks are exactly what I needed to build a real habit.',
-    author: 'Jon, Product Manager'
+    quote: "The real-time feedback is gold. I see exactly why a phrasing is more natural and learn it on the spot.",
+    author: 'Dev — Product Manager'
   },
   {
-    quote: 'It feels calm yet motivating. I’m learning more in 15 minutes than I used to in an hour.',
-    author: 'Ana, Student'
+    quote: "Micro-lessons fit my commute perfectly. I’ve kept a 42‑day streak without ever feeling overwhelmed.",
+    author: 'Mina — Designer'
+  },
+  {
+    quote: "Our team finally sounds consistent across languages. Glossaries and tone presets made it effortless.",
+    author: 'Arman — Localization Ops'
   },
 ]
 
@@ -29,7 +33,7 @@ export default function Testimonials() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">What learners say</h2>
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">What LingoFlow users say</h2>
         <div className="mt-10 relative">
           <div className="overflow-hidden">
             <div className="flex transition-transform duration-700 ease-out" style={{ transform: `translateX(-${index * 100}%)` }}>
