@@ -1,7 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
-import ProgressStrip from './components/ProgressStrip'
+import ProductPreview from './components/ProductPreview'
+import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 import Marquee from './components/Marquee'
 import CTA from './components/CTA'
@@ -12,7 +13,10 @@ function App() {
     <div className="min-h-screen bg-white text-slate-900">
       <Navbar />
       <main>
+        {/* 1. Hero Section */}
         <Hero />
+
+        {/* 2. Features */}
         <section className="py-10">
           <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 items-start">
             <div className="md:col-span-2 rounded-2xl border border-gray-100 bg-white/80 backdrop-blur p-6 shadow-sm">
@@ -32,12 +36,22 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Marquee divider */}
         <div className="max-w-6xl mx-auto px-6">
           <Marquee />
         </div>
+
+        {/* 3. Product preview */}
+        <ProductPreview />
+
+        {/* CTA bridge */}
         <CTA />
-        <ProgressStrip />
+
+        {/* 4. Testimonials */}
+        <Testimonials />
       </main>
+      {/* 5. Footer */}
       <Footer />
     </div>
   )

@@ -32,13 +32,13 @@ export default function Features() {
           {features.map(({ icon: Icon, title, desc, color }, i) => (
             <div
               key={title}
-              className={`rounded-2xl border border-gray-100 bg-gradient-to-br ${color} p-5 shadow-sm will-change-transform transition duration-700 ease-out ${
+              className={`group rounded-2xl border border-gray-100 bg-gradient-to-br ${color} p-5 shadow-sm will-change-transform transition duration-700 ease-out ${
                 inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
+              } hover:-translate-y-1 hover:[transform:perspective(800px)_rotateX(1.5deg)_rotateY(-1.5deg)]`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
               <div className="flex items-start gap-3">
-                <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm">
                   <Icon size={22} className="text-slate-700" />
                 </div>
                 <div>
@@ -54,7 +54,7 @@ export default function Features() {
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           } transition duration-700 ease-out`} style={{ transitionDelay: `${features.length * 80}ms` }}>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-white border border-gray-100 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm">
                 <Sparkles size={18} className="text-emerald-600" />
               </div>
               <p className="text-slate-700 text-sm">

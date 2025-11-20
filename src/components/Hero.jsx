@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { useInView } from '../hooks/useInView'
+import ParallaxLayer from './ParallaxLayer'
 
 // Lazy-load Spline to avoid upfront cost and only render when needed
 const LazySpline = lazy(() => import('@splinetool/react-spline'))
@@ -32,6 +33,21 @@ export default function Hero() {
       <div className="pointer-events-none absolute -inset-16 opacity-[0.7]">
         <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_20%_20%,rgba(56,189,248,0.15),transparent),radial-gradient(50%_50%_at_80%_30%,rgba(52,211,153,0.12),transparent),radial-gradient(40%_40%_at_50%_80%,rgba(15,23,42,0.06),transparent)] animate-[pulse_12s_ease-in-out_infinite]" />
       </div>
+
+      {/* Parallax floating shapes (very subtle) */}
+      {!reducedMotion && (
+        <div aria-hidden className="absolute inset-0">
+          <ParallaxLayer speed={0.08} className="absolute -top-10 left-10">
+            <div className="h-56 w-56 rounded-full bg-sky-200/40 blur-2xl" />
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.12} className="absolute top-20 right-0">
+            <div className="h-72 w-72 rounded-full bg-emerald-200/40 blur-3xl" />
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.06} className="absolute bottom-0 left-1/2 -translate-x-1/2">
+            <div className="h-64 w-64 rounded-full bg-indigo-200/30 blur-2xl" />
+          </ParallaxLayer>
+        </div>
+      )}
 
       {/* 3D scene only on capable devices and when in view */}
       <div className="absolute inset-0" aria-hidden>
